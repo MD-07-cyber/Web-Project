@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Quenx</title>    
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .naviagtion{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ccc;
+            border-radius: 3px;;
+            background-color: rgb(255, 255, 255);
+        }
+        .naviagtion a {
+            padding: 8px 16px;
+            color: #333;
+            text-decoration: none;
+        }
+        .naviagtion a :hover{
+            background-color: #ddd;
+            border-radius: 4px;
+        }
+        .Search-in button{
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .Search-in input{
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+       
+
+        .container {
+            display: flex;
+            gap: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            width: 60%;
+            position: relative;
+            background: linear-gradient(to right, #f3f1ec, #fff);
+            padding: 40px;
+            border-radius: 10px;
+            background-image: url('Hero.jpg');
+            background-size: cover;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtext {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .hero-image {
+            width: 80%;
+            position: absolute;
+            bottom: -20px;
+            right: 10px;
+        }
+
+        .product-card {
+            width: 30%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .sale-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        .product-image {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .new-price {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .add-to-cart {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+            
+        
+    </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Logo">
+        </a>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="page.html"><button id="home"> HOME</button></a></li>
+                <li><a href="Customer.html"><button id="home">Customer</button></a></li>
+                <li><a href="About us.html"><button id="home">About Us</button></a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="icons">
+            <a href="signin.html"><button id="home">Log In</button></a>
+            <a href="signup.html"><button id="home">Sign up</button></a>
+        </div>
+        <div class="header-icons">
+            <i class='bx bx-cart-add' ></i>
+        </div>
+    </header>
+    
+    <br><br><br><br><br><br>
+    <div class="container">
+        <div class="hero">
+            <h1>WALKING <br> WITH <br> PURPOSE.</h1>
+            <p class="subtext">Premium Sneakers</p>
+            
+        </div>
+
+        <div class="product-card">
+            <div class="sale-tag">Sale</div>
+            <img src="shoe_1.jpg" alt="Bio Runner" class="product-image">
+            <h2>Bio Runner</h2>
+            <p class="price"><span class="old-price">$119.00</span> <span class="new-price">$99.00</span></p>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>SHOP</h3>
+                <ul>
+                    <li><a href="#">All products</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Sports </a></li>
+                    <li><a href="#">Mens</a></li>
+                    <li><a href="#">Womens</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>POLICIES</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACT</h3>
+                <p>Universityof Moratuwa<br>75367366276<br><a href="mailto:info@mysite.com">info@mysite.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>SOCIAL</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Tik Tok</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>STAY IN THE LOOP</h3>
+                <p>Sign up to receive updates and special offers</p>
+                <input type="email" placeholder="Email Address">
+                <button type="button">SIGN UP</button>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2023 by Quenx. Built on Wix Studio</p>
+    </footer>
+</body>
+</html>
